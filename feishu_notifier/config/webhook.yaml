@@ -1,0 +1,4 @@
+feishu:
+  webhook_url: ""   # put your real Feishu bot webhook here
+  report_title: "Ju.com 接口自动化日报"
+  at_list: []

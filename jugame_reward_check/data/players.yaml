@@ -1,0 +1,17 @@
+- uid: 200101
+  username: "player_alpha"
+  wallet: "0xF1A7b8F2b223d9fB4c0a3bD23EeAD27eF79A9e02"
+  expected_reward: 120
+  game_type: "battle_royale"
+
+- uid: 200102
+  username: "player_bravo"
+  wallet: "0x2B44A03E7eF7dF21AeE67C9bC54e45d92A8bA3aF"
+  expected_reward: 60
+  game_type: "plants_vs_zombies"
+
+- uid: 200103
+  username: "player_charlie"
+  wallet: "0xE8e12bC2D4b6fB11eA62a1bD67c6d8B3a24fA91C"
+  expected_reward: 90
+  game_type: "battle_royale"

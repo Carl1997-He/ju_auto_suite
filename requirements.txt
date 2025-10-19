@@ -1,0 +1,9 @@
+requests
+PyYAML
+pandas
+SQLAlchemy
+pymysql
+web3==6.20.1
+apscheduler
+pytest
+allure-pytest

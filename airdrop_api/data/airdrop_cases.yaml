@@ -1,0 +1,41 @@
+- case_id: TC001
+  title: 新注册用户领取空投
+  method: POST
+  url: /api/airdrop/claim
+  uid: 100001
+  wallet: "0x9a7b21cfe0aE482c0aF00257e3dB2A7aC9344B7D"
+  payload:
+    activity_id: "AIRDROP_202510"
+    token: "USDT"
+    amount: 5.0
+  expected:
+    code: 0
+    msg: "success"
+
+- case_id: TC002
+  title: 已领取用户重复领取
+  method: POST
+  url: /api/airdrop/claim
+  uid: 100002
+  wallet: "0xF22b9916d40E91aDeC2D2e0CfC1a2A97Bc410Cd8"
+  payload:
+    activity_id: "AIRDROP_202510"
+    token: "USDT"
+    amount: 5.0
+  expected:
+    code: 4001
+    msg: "already claimed"
+
+- case_id: TC003
+  title: 任务完成用户领取空投
+  method: POST
+  url: /api/airdrop/claim
+  uid: 100003
+  wallet: "0x7aD934E4c1bFa5Dd52A502d6F10eA05e7D6C99bC"
+  payload:
+    activity_id: "TASK_AIRDROP"
+    token: "JU"
+    amount: 25.0
+  expected:
+    code: 0
+    msg: "success"

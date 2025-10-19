@@ -1,0 +1,3 @@
+# If SQLALCHEMY_URL omitted, defaults to sqlite file below
+SQLITE_FILE: "airdrop.db"
+ECHO: false
